@@ -1,19 +1,33 @@
-# Ingresar la edad de una persona e imprimir:
+# 3)Crear un programa para un gimnasio que calculé la mensualidad:
+# -plan básico: $2000
+# -plan intermedio: $3500
+# -plan premium: $5000
+# Descuentos:
+# -pago anual: 20% de descuento
+# -pago semestral: 10% de descuento
+# -pago estudiante:15% adicional
+# -grupo familiar (tres o más):25% adicional
+# Mostrar:
+# -plan seleccionado
+# -descuentos aplicables
+# -total a pagar
 
-# "Menor de edad" si es < 18
+print("1- plan basico : 2000")
+print("2- plan intermedio : 3500")
+print("3- plan premium : 5000")
+plan_elegido= int(input("cual es tu plan?"))
 
-edad = int(input("Ingrese edad: "))
+costo_plan = 0
 
-print(edad)
-# int()
+if  plan_elegido == 1:
+    costo_plan = 2000
+elif plan_elegido == 2:
+    costo_plan = 3500
+elif plan_elegido == 3:
+    costo_plan =5000
 
-if edad < 18:
-    print("Es menor de edad.")
-else:
-    print("Es mayor de edad.")
+costo_plan = int(input(f"costo_plan: {costo_plan}"))
+print(1- pago anual : 20% de descuento )
 
-# if edad >= 18:
 
-# "Adulto" si está entre 18 y 65
 
-# "Adulto mayor" si es > 65
